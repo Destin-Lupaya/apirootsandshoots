@@ -91,10 +91,10 @@ class UtilisateurController extends Controller
         //
     }
 
-    public function destroy($id)
-    {
-        //
-    }
+    // public function destroy($id)
+    // {
+    //     //
+    // }
 
     /**
      * look for a specific resource in storage.
