@@ -16,6 +16,7 @@ class UtilisateurController extends Controller
     public function index()
     {
         //
+        return Utilisateur::all();
     }
 
     /**
@@ -37,6 +38,7 @@ class UtilisateurController extends Controller
     public function store(StoreUtilisateurRequest $request)
     {
         //
+        return Utilisateur::create($request->all());
     }
 
     /**
@@ -48,6 +50,7 @@ class UtilisateurController extends Controller
     public function show(Utilisateur $utilisateur)
     {
         //
+        return Utilisateur::find($id);
     }
 
     /**
@@ -71,6 +74,10 @@ class UtilisateurController extends Controller
     public function update(UpdateUtilisateurRequest $request, Utilisateur $utilisateur)
     {
         //
+        $utilisateur =  Utilisateur::find($id);
+        $utilisateur->update($request->all());
+
+        return $utilisateur;
     }
 
     /**
@@ -83,4 +90,6 @@ class UtilisateurController extends Controller
     {
         //
     }
+
+    
 }
