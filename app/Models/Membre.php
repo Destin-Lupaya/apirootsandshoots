@@ -26,6 +26,6 @@ class Membre extends Model
     ];
     function getActivities(){
 
-        return $this->hasMany('App\Models\AccountActivity');
+        return $this->hasMany('App\Models\users');
     }
 }

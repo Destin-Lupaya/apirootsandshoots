@@ -1,6 +1,6 @@
-<?php
+]<?php
 
-namespace App\Http\Controllers;
+//namespace App\Http\Controllers;
 
 use App\Models\Membre;
 use App\Http\Requests\StoreMembreRequest;
@@ -16,8 +16,9 @@ class MembreController extends Controller
     public function index()
     {
         //
-    }
+        return Membre::all();
 
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -36,7 +37,29 @@ class MembreController extends Controller
      */
     public function store(StoreMembreRequest $request)
     {
+        // $fileName = time().'.'.$request->file->extension();
+
+        // $request->file->move(public_path('/clubfiles'), $fileName);
+        // $url = '/clubiles/'.$fileName;
+
+        // $inputs = $request->inputs;
         //
+        $data = [ 
+            'name' => $request->name,
+            'description' => $request->description,
+            'avatar' => $url,
+            'statusActive' => $request->statusActive,
+            'cashIn' => $request->cashIn,
+            'cashOut' => $request->cashOut,
+            'hasStock' => $request->hasStock,
+            'hasNegativeSold' => $request->hasNegativeSold,
+            'points' => $request->points,
+            'users_id' => $request->users_id
+        ]; 
+        function getActivities(){
+
+            return $this->hasMany('App\Models\AccountActivity');
+        }
     }
 
     /**
