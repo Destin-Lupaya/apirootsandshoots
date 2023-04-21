@@ -37,6 +37,27 @@ class ClubController extends Controller
     public function store(StoreClubRequest $request)
     {
         //
+
+
+        $data = [ 
+            'CodeClub' => $request->CodeClub,
+            'NomClub' => $request->NomClub,
+            'Avatar' => $url,
+            'AnneeAdhesion' => $request->AnneeAdhesion,
+            'CodeAffiliation' => $request->CodeAffiliation,
+            'TypeAdhesion' => $request->TypeAdhesion,
+            'NombreMembres' => $request->NombreMembres,
+            'GroupeAge' => $request->GroupeAge,
+            'AdresseClub' => $request->AdresseClub,
+            'Territoire_Ville' => $request->Territoire_Ville,
+            'NomPresidentClub' => $request->NomPresidentClub,
+            'NomCoordinateur' => $request->NomCoordinateur,
+            'ProfessionCoordinateur' => $request->ProfessionCoordinateur,
+            'AdresseCoordinateur' => $request->AdresseCoordinateur,
+            'Telephone' => $request->Telephone,
+            'mail' => $request->mail,
+            'users_id' => $request->users_id
+        ]; 
     }
 
     /**

@@ -37,6 +37,13 @@ class TerritoireController extends Controller
     public function store(StoreTerritoireRequest $request)
     {
         //
+        $data = [ 
+            'CodeTerritoire' => $request->CodeTerritoire,
+            'NomTerritoire' => $request->NomTerritoire,
+            'Avatar' => $url,
+            'CodeClub' => $request->CodeClub,
+            'users_id' => $request->users_id
+        ]; 
     }
 
     /**

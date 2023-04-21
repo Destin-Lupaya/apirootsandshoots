@@ -37,6 +37,13 @@ class PaysController extends Controller
     public function store(StorePaysRequest $request)
     {
         //
+        $data = [ 
+            'CodePays' => $request->CodePays,
+            'NomPays' => $request->NomPays,
+            'Avatar' => $url,
+            'CodeProvince' => $request->CodeProvince,
+            'users_id' => $request->users_id
+        ]; 
     }
 
     /**

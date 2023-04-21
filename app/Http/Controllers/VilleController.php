@@ -37,6 +37,13 @@ class VilleController extends Controller
     public function store(StoreVilleRequest $request)
     {
         //
+        $data = [ 
+            'CodeVille' => $request->CodeVille,
+            'NomVille' => $request->NomVille,
+            'Avatar' => $url,
+            'CodeClub' => $request->CodeClub,
+            'users_id' => $request->users_id
+        ]; 
     }
 
     /**

@@ -16,6 +16,9 @@ class ProvinceController extends Controller
     public function index()
     {
         //
+
+        
+    
     }
 
     /**
@@ -37,6 +40,14 @@ class ProvinceController extends Controller
     public function store(StoreProvinceRequest $request)
     {
         //
+        $data = [ 
+            'CodeProvince' => $request->CodeProvince,
+            'NomProvince' => $request->NomProvince,
+            'Avatar' => $url,
+            'CodeVille' => $request->CodeVille,
+            'CodeTerritoire' => $request->CodeTerritoire,
+            'users_id' => $request->users_id
+        ]; 
     }
 
     /**

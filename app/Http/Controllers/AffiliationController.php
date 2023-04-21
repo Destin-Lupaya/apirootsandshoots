@@ -37,6 +37,15 @@ class AffiliationController extends Controller
     public function store(StoreAffiliationRequest $request)
     {
         //
+        $data = [ 
+            'CodeAffiliation' => $request->CodeAffiliation,
+            'NomAffiliation' => $request->NomAffiliation,
+            'Avatar' => $url,
+            'CodeMembre' => $request->CodeMembre,
+            'DateAffiliation' => $request->CodeAffiliation,
+            'users_id' => $request->users_id
+        ]; 
+
     }
 
     /**
