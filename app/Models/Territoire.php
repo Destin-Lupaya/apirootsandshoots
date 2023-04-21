@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Territoire extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'created_users_id',
+        'CodeTerritoire',
+        'NomTerritoire',
+        'CodeClub'
+        
+               
+    ];
 }

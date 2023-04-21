@@ -45,15 +45,19 @@ class MembreController extends Controller
         // $inputs = $request->inputs;
         //
         $data = [ 
-            'name' => $request->name,
-            'description' => $request->description,
-            'avatar' => $url,
-            'statusActive' => $request->statusActive,
-            'cashIn' => $request->cashIn,
-            'cashOut' => $request->cashOut,
-            'hasStock' => $request->hasStock,
-            'hasNegativeSold' => $request->hasNegativeSold,
-            'points' => $request->points,
+            'CodeMembre' => $request->CodeMembre,
+            'Nom' => $request->Nom,
+            'Avatar' => $url,
+            'PostNom' => $request->PostNom,
+            'Prenom' => $request->Prenom,
+            'Age' => $request->Age,
+            'Sexe' => $request->Sexe,
+            'ClassEtude' => $request->ClassEtude,
+            'NiveauEtude' => $request->NiveauEtude,
+            'Numero' => $request->Numero,
+            'FonctionMembre' => $request->FonctionMembre,
+            'AdresseMembre' => $request->AdresseMembre,
+            'mail' => $request->mail,
             'users_id' => $request->users_id
         ]; 
         function getActivities(){

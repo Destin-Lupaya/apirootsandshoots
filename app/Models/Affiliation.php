@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Affiliation extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'created_users_id',
+        'CodeAffiliation',
+        'NomAffiliation',
+        'CodeMembre',
+        'DateAffiliation'
+               
+    ];
 }
