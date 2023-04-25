@@ -30,7 +30,7 @@ return new class extends Migration
             $table->string('ProfessionCoordinateur');
             $table->string('AdresseCoordinateur');
             $table->string('Telephone');
-             $table->string('mail');
+            $table->string('mail');
             $table->timestamps();
         });
     }

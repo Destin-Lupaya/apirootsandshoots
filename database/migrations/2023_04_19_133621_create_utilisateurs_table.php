@@ -15,6 +15,18 @@ return new class extends Migration
     {
         Schema::create('utilisateurs', function (Blueprint $table) {
             $table->id();
+            $table->string('names');
+            $table->string('email')->unique();
+            $table->string('telephone')->unique()->nullable();
+            $table->string('username')->unique()->nullable();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('psw')->default("1234");
+            $table->string('role');
+            $table->string('code')->unique()->nullable();
+            $table->string('pin');
+            $table->string('avatar')->default('assets/images/avatars/male-03.jpg');
+            $table->boolean('statusActive')->default(true);
+            $table->rememberToken();
             $table->timestamps();
         });
     }
