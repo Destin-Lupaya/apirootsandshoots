@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('territoires', function (Blueprint $table) {
             $table->id();
+            $table->string('CodeTerritoire');
+            $table->string('NomTerritoire');
+            $table->string('CodeClub');
             $table->timestamps();
         });
     }

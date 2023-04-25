@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('provinces', function (Blueprint $table) {
             $table->id();
+            $table->string('CodeProvince');
+            $table->string('NomProvince');
+            $table->string('CodeVille');
+            $table->string('CodeTerritoire');
             $table->timestamps();
         });
     }

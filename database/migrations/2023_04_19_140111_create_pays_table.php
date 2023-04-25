@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('pays', function (Blueprint $table) {
             $table->id();
+            $table->string('CodePays');
+            $table->string('NomPays');
+            $table->string('CodeProvince');
             $table->timestamps();
         });
     }

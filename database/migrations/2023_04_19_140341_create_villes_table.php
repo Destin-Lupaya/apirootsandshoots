@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('villes', function (Blueprint $table) {
             $table->id();
+            $table->string('CodeVille');
+            $table->string('NomVille');
+            $table->string('CodeClub');
             $table->timestamps();
         });
     }
