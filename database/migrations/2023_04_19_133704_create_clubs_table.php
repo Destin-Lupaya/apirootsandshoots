@@ -15,6 +15,22 @@ return new class extends Migration
     {
         Schema::create('clubs', function (Blueprint $table) {
             $table->id();
+            $table->string('CodeClub');
+            $table->string('NomClub');
+            $table->string('AnneeAdhesion');
+            $table->string('CodeAffiliation');
+            $table->string('TypeAdhesion');
+            $table->string('NombreMembres');
+            $table->string('GroupeAge');
+            $table->string('AdresseClub');
+            $table->string('Territoire_Ville');
+            $table->string('Province');
+            $table->string('NomPresidentClub');
+            $table->string('NomCoordinateur');
+            $table->string('ProfessionCoordinateur');
+            $table->string('AdresseCoordinateur');
+            $table->string('Telephone');
+             $table->string('mail');
             $table->timestamps();
         });
     }

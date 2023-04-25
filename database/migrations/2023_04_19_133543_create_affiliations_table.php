@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('affiliations', function (Blueprint $table) {
             $table->id();
+            $table->string('CodeAffiliation');
+            $table->string('NomAffiliation');
+            $table->string('CodeMembre');
+            $table->string('DateAffiliation');
             $table->timestamps();
         });
     }
