@@ -16,6 +16,7 @@ class ProvinceController extends Controller
     public function index()
     {
         //
+        return Province::all();
 
         
     
@@ -48,6 +49,7 @@ class ProvinceController extends Controller
             'CodeTerritoire' => $request->CodeTerritoire,
             'users_id' => $request->users_id
         ]; 
+            return Province::create($data);
     }
 
     /**

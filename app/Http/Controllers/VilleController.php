@@ -16,6 +16,7 @@ class VilleController extends Controller
     public function index()
     {
         //
+        return loans::all();
     }
 
     /**
@@ -40,10 +41,11 @@ class VilleController extends Controller
         $data = [ 
             'CodeVille' => $request->CodeVille,
             'NomVille' => $request->NomVille,
-            'Avatar' => $url,
+           // 'Avatar' => $url,
             'CodeClub' => $request->CodeClub,
             'users_id' => $request->users_id
         ]; 
+            return Ville::create($data);
     }
 
     /**

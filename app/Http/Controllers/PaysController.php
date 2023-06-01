@@ -16,6 +16,7 @@ class PaysController extends Controller
     public function index()
     {
         //
+        return Pays::all();
     }
 
     /**
@@ -40,10 +41,12 @@ class PaysController extends Controller
         $data = [ 
             'CodePays' => $request->CodePays,
             'NomPays' => $request->NomPays,
-            'Avatar' => $url,
+            //'Avatar' => $url,
             'CodeProvince' => $request->CodeProvince,
             'users_id' => $request->users_id
         ]; 
+            return Pays::create($data);
+
     }
 
     /**

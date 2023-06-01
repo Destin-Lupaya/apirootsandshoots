@@ -60,10 +60,7 @@ class MembreController extends Controller
             'mail' => $request->mail,
             'users_id' => $request->users_id
         ]; 
-        function getActivities(){
-
-            return $this->hasMany('App\Models\AccountActivity');
-        }
+        return Membre::create($data);
     }
 
     /**

@@ -16,6 +16,7 @@ class TerritoireController extends Controller
     public function index()
     {
         //
+        return Territoire::all();
     }
 
     /**
@@ -44,6 +45,7 @@ class TerritoireController extends Controller
             'CodeClub' => $request->CodeClub,
             'users_id' => $request->users_id
         ]; 
+                return Territoire::create($data);
     }
 
     /**

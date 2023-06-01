@@ -16,6 +16,7 @@ class ClubController extends Controller
     public function index()
     {
         //
+        return  Club::all();
     }
 
     /**
@@ -58,6 +59,7 @@ class ClubController extends Controller
             'mail' => $request->mail,
             'users_id' => $request->users_id
         ]; 
+        return Club::create($data);
     }
 
     /**

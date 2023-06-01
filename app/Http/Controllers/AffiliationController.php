@@ -16,6 +16,7 @@ class AffiliationController extends Controller
     public function index()
     {
         //
+        return  Affiliation::all();
     }
 
     /**
@@ -42,10 +43,10 @@ class AffiliationController extends Controller
             'NomAffiliation' => $request->NomAffiliation,
             'Avatar' => $url,
             'CodeMembre' => $request->CodeMembre,
-            'DateAffiliation' => $request->CodeAffiliation,
+            'DateAffiliation' => $request->DateAffiliation,
             'users_id' => $request->users_id
         ]; 
-
+        return Affiliation::create($data);
     }
 
     /**
