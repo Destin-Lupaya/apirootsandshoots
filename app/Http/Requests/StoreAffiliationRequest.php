@@ -23,8 +23,8 @@ class StoreAffiliationRequest extends FormRequest
      */
     public function rules()
     {  
-         $rules = [
-        'created_users_id' => 'required',
+        $rules = [
+    //     'created_users_id' => 'required',
         'CodeAffiliation' => 'required',
         'NomAffiliation' => 'required',
         'CodeMembre' => 'required',

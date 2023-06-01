@@ -41,7 +41,7 @@ class AffiliationController extends Controller
         $data = [ 
             'CodeAffiliation' => $request->CodeAffiliation,
             'NomAffiliation' => $request->NomAffiliation,
-            'Avatar' => $url,
+           // 'Avatar' => $url,
             'CodeMembre' => $request->CodeMembre,
             'DateAffiliation' => $request->DateAffiliation,
             'users_id' => $request->users_id

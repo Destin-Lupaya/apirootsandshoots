@@ -24,7 +24,7 @@ class StoreClubRequest extends FormRequest
     public function rules()
     {
          $rules = [
-        'created_users_id' => 'required',
+        //'created_users_id' => 'required',
         'CodeClub' => 'required',
         'NomClub' => 'required',
         'AnneeAdhesion' => 'required',
@@ -34,8 +34,11 @@ class StoreClubRequest extends FormRequest
         'GroupeAge' => 'required',
         'AdresseClub' => 'required',
         'Territoire_Ville' => 'required',
+        'Province' => 'required',
         'NomPresidentClub' => 'required',
         'NomCoordinateur' => 'required',
+        'ProfessionCoordinateur' => 'required',
+        'AdresseCoordinateur' => 'required',
         'Telephone' => 'required',
         'mail' => 'required'
 

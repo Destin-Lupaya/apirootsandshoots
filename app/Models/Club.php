@@ -9,7 +9,7 @@ class Club extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'created_users_id',
+       // 'created_users_id',
         'CodeClub',
         'NomClub',
         'AnneeAdhesion',
@@ -19,8 +19,11 @@ class Club extends Model
         'GroupeAge',
         'AdresseClub',
         'Territoire_Ville',
+        'Province',
         'NomPresidentClub',
-        'NomCoordinateur',
+         'NomCoordinateur',
+         'ProfessionCoordinateur',
+         'AdresseCoordinateur',
         'Telephone',
         'mail',
        

@@ -35,8 +35,13 @@ Route::get('/Province', 'App\Http\Controllers\ProvinceController@index');
 Route::get('/Ville', 'App\Http\Controllers\VilleController@index');
 
 
+Route::group(
+    [
+        // 'namespace' => 'App\Http\Controllers\UsersController',
+        'middleware' =>'api'],function ($routes) {
+            Route::post('/register', [UsersController::class, 'register']);
+    });
 
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
