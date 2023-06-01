@@ -22,9 +22,16 @@ class StoreProvinceRequest extends FormRequest
      * @return array<string, mixed>
      */
     public function rules()
-    {
-        return [
-            //
-        ];
+    { 
+        $rules = [
+        'created_users_id'=> 'required',
+        'CodeProvince'=> 'required',
+        'NomProvince'=> 'required',
+        'CodeVille'=> 'required',
+        'CodeTerritoire'=> 'required'
+        
+
+    ];
+            return $rules;
     }
 }

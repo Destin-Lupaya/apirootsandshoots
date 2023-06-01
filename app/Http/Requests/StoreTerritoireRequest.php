@@ -23,8 +23,16 @@ class StoreTerritoireRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
+        $rules = [
+
+            'created_users_id'=> 'required',
+            'CodeTerritoire'=> 'required',
+            'NomTerritoire'=> 'required',
+            'CodeClub'=> 'required'
+            
+            
+    
         ];
+                return $rules;
     }
 }

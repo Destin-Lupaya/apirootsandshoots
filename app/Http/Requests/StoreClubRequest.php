@@ -23,8 +23,23 @@ class StoreClubRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
-        ];
+         $rules = [
+        'created_users_id' => 'required',
+        'CodeClub' => 'required',
+        'NomClub' => 'required',
+        'AnneeAdhesion' => 'required',
+        'CodeAffiliation' => 'required',
+        'TypeAdhesion' => 'required',
+        'NombreMembres' => 'required',
+        'GroupeAge' => 'required',
+        'AdresseClub' => 'required',
+        'Territoire_Ville' => 'required',
+        'NomPresidentClub' => 'required',
+        'NomCoordinateur' => 'required',
+        'Telephone' => 'required',
+        'mail' => 'required'
+
+    ];
+            return $rules;
     }
 }

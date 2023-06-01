@@ -23,8 +23,23 @@ class StoreMembreRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
+        $rules = [
+
+            'created_users_id' => 'required',
+            'CodeMembre' => 'required',
+            'Nom' => 'required',
+            'PostNom' => 'required',
+            'Prenom' => 'required',
+            'Age' => 'required',
+            'Sexe' => 'required',
+            'ClassEtude' => 'required',
+            'NiveauEtude' => 'required',
+            'Numero' => 'required',
+            'FonctionMembre' => 'required',
+            'AdresseMembre',
+            'mail' => 'required'
+    
         ];
+                return $rules;
     }
 }

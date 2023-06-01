@@ -24,8 +24,5 @@ class Membre extends Model
         'mail',
        
     ];
-    function getActivities(){
-
-        return $this->hasMany('App\Models\users');
-    }
+    
 }

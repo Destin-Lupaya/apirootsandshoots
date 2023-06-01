@@ -23,8 +23,16 @@ class StoreVilleRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
+        $rules = [
+
+            'created_users_id'=> 'required',
+            'CodeVille'=> 'required',
+            'NomVille'=> 'required',
+            'CodeClub' => 'required'        
+            
+            
+    
         ];
+                return $rules;
     }
 }

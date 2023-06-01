@@ -22,9 +22,17 @@ class StoreAffiliationRequest extends FormRequest
      * @return array<string, mixed>
      */
     public function rules()
-    {
-        return [
-            //
-        ];
+    {  
+         $rules = [
+        'created_users_id' => 'required',
+        'CodeAffiliation' => 'required',
+        'NomAffiliation' => 'required',
+        'CodeMembre' => 'required',
+        'DateAffiliation' => 'required'
+
+    ];
+            return $rules;
+      
+       
     }
 }
