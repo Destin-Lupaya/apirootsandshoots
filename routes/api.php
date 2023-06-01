@@ -15,11 +15,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Route::resource('/points', PointsController::class);
-Route::resource('/billetage', BilletageController::class);
-Route::post('/add-billetage', [BilletageController::class, 'saveBilletage']);
-Route::post('/add-incident', [ClotureIncidentsController::class, 'store']);
 
 
+
+Route::post('/Affiliation', 'App\Http\Controllers\AffiliationController@store');
+Route::post('/Club', 'App\Http\Controllers\ClubController@store');
+Route::post('/Membre', 'App\Http\Controllers\MembreController@store');
+Route::post('/Pays', 'App\Http\Controllers\PaysController@store');
+Route::post('/Territoire', 'App\Http\Controllers\TerritoireController@store');
+Route::post('/Province', 'App\Http\Controllers\ProvinceController@store');
+Route::post('/Ville', 'App\Http\Controllers\VilleController@store');
+
+Route::get('/Affiliation', 'App\Http\Controllers\AffiliationController@index');
+Route::get('/Club', 'App\Http\Controllers\ClubController@index');
+Route::get('/Membre', 'App\Http\Controllers\MembreController@index');
+Route::get('/Pays', 'App\Http\Controllers\PaysController@index');
+Route::get('/Territoire', 'App\Http\Controllers\TerritoireController@index');
+Route::get('/Province', 'App\Http\Controllers\ProvinceController@index');
+Route::get('/Ville', 'App\Http\Controllers\VilleController@index');
 
 
 
