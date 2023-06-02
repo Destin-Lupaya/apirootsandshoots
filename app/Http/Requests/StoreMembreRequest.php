@@ -25,7 +25,7 @@ class StoreMembreRequest extends FormRequest
     {
         $rules = [
 
-            'created_users_id' => 'required',
+            //'created_users_id' => 'required',
             'CodeMembre' => 'required',
             'Nom' => 'required',
             'PostNom' => 'required',

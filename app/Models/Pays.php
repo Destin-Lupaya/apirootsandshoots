@@ -9,7 +9,7 @@ class Pays extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'created_users_id',
+       // 'created_users_id',
         'CodePays',
         'NomPays',
         'CodeProvince'

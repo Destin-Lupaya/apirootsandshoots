@@ -43,7 +43,7 @@ class PaysController extends Controller
             'NomPays' => $request->NomPays,
             //'Avatar' => $url,
             'CodeProvince' => $request->CodeProvince,
-            'users_id' => $request->users_id
+            //'users_id' => $request->users_id
         ]; 
             return Pays::create($data);
 

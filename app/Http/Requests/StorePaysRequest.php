@@ -24,7 +24,7 @@ class StorePaysRequest extends FormRequest
     public function rules()
     {
         $rules = [
-            'created_users_id' => 'required',
+           
             'CodePays' => 'required',
             'NomPays' => 'required',
             'CodeProvince' => 'required'

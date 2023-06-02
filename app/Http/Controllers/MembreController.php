@@ -1,10 +1,12 @@
-]<?php
+<?php
 
-//namespace App\Http\Controllers;
+namespace App\Http\Controllers;
 
 use App\Models\Membre;
 use App\Http\Requests\StoreMembreRequest;
 use App\Http\Requests\UpdateMembreRequest;
+
+
 
 class MembreController extends Controller
 {
@@ -37,17 +39,11 @@ class MembreController extends Controller
      */
     public function store(StoreMembreRequest $request)
     {
-        // $fileName = time().'.'.$request->file->extension();
-
-        // $request->file->move(public_path('/clubfiles'), $fileName);
-        // $url = '/clubiles/'.$fileName;
-
-        // $inputs = $request->inputs;
-        //
+        
         $data = [ 
             'CodeMembre' => $request->CodeMembre,
             'Nom' => $request->Nom,
-            'Avatar' => $url,
+            //'Avatar' => $url,
             'PostNom' => $request->PostNom,
             'Prenom' => $request->Prenom,
             'Age' => $request->Age,
@@ -57,8 +53,8 @@ class MembreController extends Controller
             'Numero' => $request->Numero,
             'FonctionMembre' => $request->FonctionMembre,
             'AdresseMembre' => $request->AdresseMembre,
-            'mail' => $request->mail,
-            'users_id' => $request->users_id
+            'mail' => $request->mail
+            //'users_id' => $request->users_id
         ]; 
         return Membre::create($data);
     }

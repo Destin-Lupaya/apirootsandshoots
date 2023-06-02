@@ -24,11 +24,11 @@ class StoreProvinceRequest extends FormRequest
     public function rules()
     { 
         $rules = [
-        'created_users_id'=> 'required',
-        'CodeProvince'=> 'required',
-        'NomProvince'=> 'required',
-        'CodeVille'=> 'required',
-        'CodeTerritoire'=> 'required'
+        //'created_users_id'=> 'required',
+        // 'CodeProvince'=> 'required',
+        // 'NomProvince'=> 'required',
+        // 'CodeVille'=> 'required',
+        // 'CodeTerritoire'=> 'required'
         
 
     ];

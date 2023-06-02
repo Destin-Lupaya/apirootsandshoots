@@ -44,10 +44,10 @@ class ProvinceController extends Controller
         $data = [ 
             'CodeProvince' => $request->CodeProvince,
             'NomProvince' => $request->NomProvince,
-            'Avatar' => $url,
+            //'Avatar' => $url,
             'CodeVille' => $request->CodeVille,
-            'CodeTerritoire' => $request->CodeTerritoire,
-            'users_id' => $request->users_id
+            'CodeTerritoire' => $request->CodeTerritoire
+           // 'users_id' => $request->users_id
         ]; 
             return Province::create($data);
     }
