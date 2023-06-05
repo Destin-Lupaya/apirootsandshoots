@@ -25,7 +25,7 @@ class StoreTerritoireRequest extends FormRequest
     {
         $rules = [
 
-            'created_users_id'=> 'required',
+            //'created_users_id'=> 'required',
             'CodeTerritoire'=> 'required',
             'NomTerritoire'=> 'required',
             'CodeClub'=> 'required'

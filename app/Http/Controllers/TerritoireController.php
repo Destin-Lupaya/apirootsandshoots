@@ -41,9 +41,9 @@ class TerritoireController extends Controller
         $data = [ 
             'CodeTerritoire' => $request->CodeTerritoire,
             'NomTerritoire' => $request->NomTerritoire,
-            'Avatar' => $url,
-            'CodeClub' => $request->CodeClub,
-            'users_id' => $request->users_id
+            //'Avatar' => $url,
+            'CodeClub' => $request->CodeClub
+            //'users_id' => $request->users_id
         ]; 
                 return Territoire::create($data);
     }
